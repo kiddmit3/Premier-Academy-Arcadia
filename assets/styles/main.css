@@ -1,3 +1,44 @@
+/*Animation CSS*/
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
 @-webkit-keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -69,6 +110,93 @@
   animation-name: tada;
 }
 
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to   { visibility: visible; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+/*End of Animation CSS*/
+.mediums {
+  opacity: 0;
+  height: 640px;
+  animation: fadeInUp 2s forwards;
+}
+
+.social-btn {
+  margin: 2px;
+  margin-bottom: 20px;
+  padding: 4px;
+  color: #F44336;
+  font-size: 32px;
+
+}
+
+html, body {
+  height:100vh;
+}
+
 nav ul a,
 nav .brand-logo {
     color: #444;
@@ -94,10 +222,6 @@ p {
   padding: 20px 20px;
 }
 
-.mediums {
-  height: 500px;
-}
-
 .parallax-container {
     min-height: 400px;
     line-height: 0;
@@ -109,21 +233,6 @@ p {
     width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-}
 
 footer.page-footer {
     margin: 0;
@@ -158,10 +267,20 @@ footer.page-footer {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-top: 10px;
-    animation-name: tada;
+    animation: tada 2s forwards;
+
+}
+
+.logomain:hover {
+    animation-name: pulse;
     animation-duration: 2s
 }
 
+
+#register-btn {
+    animation-name: fadeIn;
+    animation-duration: 3s
+}
 .btn-large {
     margin: 10px;
 }
@@ -170,12 +289,28 @@ footer.page-footer {
     margin: 10px;
 }
 
-.catlist {
-    position: relative;
-    bottom: 100px;
+@media only screen and (max-width: 1200px) {
+        .mediums {
+        height: 750px;
 }
 
-#searchicon {
-    position: relative;
-    top: 80px;
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+    .mediums {
+        height: 500px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+        .mediums {
+        height: 400px;
 }

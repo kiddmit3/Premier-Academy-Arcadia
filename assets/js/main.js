@@ -15,5 +15,5 @@
      $('.parallax').parallax();
      $('.modal').modal();
      $('select').material_select();
-     $('.scrollspy').scrollSpy();
+     $('.scrollspy').scrollSpy({ scrollOffset: 55 });
  });

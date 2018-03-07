@@ -15,7 +15,7 @@
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" class="brand-logo center"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
+                <a id="logo-container" class="brand-logo center" href="#home"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="#contact">CONTACT</a></li>
                     <li style="color: black;"><i class="fas fa-phone"></i> (626) 765-3519</li>
@@ -30,7 +30,7 @@
         </nav>
     </div>
     <ul id="sidebar" class="side-nav">
-        <li><a href="./">Home</a></li>
+        <li><a href="#home">Home</a></li>
     </ul>
 </head>
 
@@ -53,11 +53,11 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="email" type="email" class="validate" name="Email">
-                            <label for="email">Email</label>
+                            <label for="email">Email*</label>
                         </div>
                         <div class="input-field col s6">
                             <input id="phone" type="tel" class="validate" name="Phone #" required>
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">Phone Number**</label>
                         </div>
                     </div>
                     <div class="row">
@@ -76,8 +76,8 @@
                             <label for="subject">Subjects</label>
                         </div>
                         <div class="input-field col s3">
-                            <input id="first_name" type="text" class="validate" name="First Name">
-                            <label for="first_name">Grade</label>
+                            <input id="grade" type="text" class="validate" name="Grade">
+                            <label for="grade">Grade</label>
                         </div>
                         <div class="input-field col s3">
                             <input id="age" type="text" class="validate" name="Age">
@@ -97,19 +97,26 @@
                         </select>
                         <label>Programs Interested:</label>
                     </div>
-                    <div style="position: fixed; bottom: 10px; right:20px;"><input type="submit" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable" value="SUBMIT"></div>
+                    <div style="position: fixed; bottom: 10px; right:20px;">
+                        <input type="submit" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable" value="ACCEPT & SUBMIT">
+                    </div>
+                    <div>
+                        *By providing your email, you will be added to our email subscription which delivers important reminders, dates, and program updates.
+                        <p>
+                            **You will also be contacted by phone to confirm your information and to schedule an appointment. </p>
+                    </div>
             </div>
         </div>
         </form>
     </div>
-    <div class="Homepage">
+    <div class="scrollspy" id="home">
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container">
                     <h1 class="header center red-text text-lighten-1" id="title">PREMIER ACADEMY</h1>
                     <div class="row center">
                         <h5 class="header col s12 red-text text-lighten-2">ARCADIA, CA CAMPUS</h5>
-                        <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1 ">REGISTER NOW</button>
+                        <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1" id="register-btn">REGISTER NOW</button>
                     </div>
                 </div>
             </div>
@@ -132,14 +139,14 @@
                         </div>
                     </div>
                     <div class="col m6 l3">
-                        <div class="card hoverable mediums">
+                        <div class="card hoverable mediums" style="animation-delay: .5s;">
                             <div class="center"><img class="icons" src="./assets/icons/formula.png"></div>
                             <h5 class="center">Summer Program</h5>
                             <p class="light">Premier Academy is now enrolling for our summer program! Our summer adventure features morning and afternoon courses in English, math, science, writing and speech, and a field trip every Friday.</p>
                         </div>
                     </div>
                     <div class="col m6 l3">
-                        <div class="card hoverable mediums">
+                        <div class="card hoverable mediums" style="animation-delay: 1s;">
                             <div class="center"><img class="icons" src="./assets/icons/book-1.png"></div>
                             <h5 class="center">Tutoring</h5>
                             <p class="light">
@@ -148,7 +155,7 @@
                         </div>
                     </div>
                     <div class="col m6 l3">
-                        <div class="card hoverable mediums">
+                        <div class="card hoverable mediums" style="animation-delay: 1.5s;">
                             <div class="center"><img class="icons" src="./assets/icons/compass.png"></div>
                             <h5 class="center">College Counseling</h5>
                             <p class="light">Selecting the proper college will be one of the most important decisions your son or daughter will make, There are many routes to enter, and Premier Academy has over 20 years of experience successfully preparing and sending students to the best universities.</p>
@@ -180,39 +187,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12">
-                            <div class="card hoverable s12">
-                                <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
-                                <h5 class="center">Want to Tutor?</h5>
-                                <p class="light">Want to tutor for us? Although we have a great selection of teachers, we are always looking to add more to the family.
-                                    <!-- We look for those who specialize across many subject areas, particularly look for tutors that can teach AP level courses -->.</p>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                        <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
+                                        <h5 class="center">Want to Tutor?</h5>
+                                        <p class="light">Although we have a great selection of teachers, we are always looking to add more to the family.</p>
+                                        <p class="center"><button class="btn waves-effect waves-light red lighten-1 activator">MORE INFO</button>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                                        <p class="left-align light">
+                                            We look for those who specialize across many subject areas, particularly for tutors that can teach AP level courses. If you feel like you are the perfect caniadate, send an <a href="mailto:info@premieracademy.com">email</a> with your resume attached highlighting your teaching abilities.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m8">
-                        <div class="card hoverable">
+                        <div class="card">
+                            <div class="card-image"><img src="./assets/img/dhruva-reddy-299390-unsplash.jpg"></div>
+                        </div>
+                        <div class="card">
                             <div class="card-image"><img src="./assets/img/pan-xiaozhen-272654-unsplash.jpg"></div>
                         </div>
+                        
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper scrollspy" id="services">
+            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper scrollspy" id="calendar">
+            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper scrollspy" id="faculty">
+            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="./assets/img/helloquence-61189-unsplash.jpg" alt="Unsplashed background img 3"></img>
+            <div class="parallax"><img style="width:100%;" src="./assets/img/helloquence-61189-unsplash.jpg" alt="Unsplashed background img 3"></img>
             </div>
         </div>
         <footer class="page-footer red">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h5 class="white-text">About Us</h5>
-                        <p class="grey-text text-lighten-4">PLW Education (PLW) is a US based company with branch offices throughout China that focuses on the successful United States placement of Greater China students entering middle school, high school and college. We have over 20 years experience and the knowledge and relationships to successfully place our students into the best possible school and living arrangements. In today’s ever changing education system, it is important to find a partner and guide who will provide you with a one stop solution posititioning your student to succeed.</p>
-                    </div>
-                </div>
-            </div>
             <div class="footer-copyright">
                 <div class="container">
-                    Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                    <div class="right">
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.facebook.com/kiddmit3/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.instagram.com/kiddmit3/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="mailto:davidlac.web@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <h5 style="font-family: 'Patua One';">Premier Academy</h5>Copyright © 2018
                 </div>
             </div>
         </footer>
