@@ -1,114 +1,114 @@
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
 iframe {
-  border: 0px;
-  border-color: white;
+    border: 0px;
+    border-color: white;
 }
+
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
+}
+.icons {
+  width: 100px;
+}
+
+.card {
+  padding: 20px 20px;
+}
+
+.mediums {
+  height: 500px;
 }
 
 .parallax-container {
-  min-height: 400px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 400px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
 
 #title {
-  position: relative;
-  top: 40px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 40px;
 }
 
 #myVideo {
     position: absolute;
     left: 0;
     top: 0;
-    width:100vw;
-    height:40vh;
+    width: 100vw;
+    height: 40vh;
     object-fit: cover;
 }
 
-.brand-logo {
-  margin-top:10px;
+.modal {
+    width: 30%;
 }
 
-.modal { 
-  width: 30%;
-} 
-
-.carousel {
-  position: relative;
-  bottom: 200px;
-
-}
 
 .circle {
-  border:5px solid white; 
+    border: 5px solid white;
 }
 
 .sidepic {
-  width: 100%;
+    width: 100%;
 }
 
 .logomain {
-  width: 130px;
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    width: 130px;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 10px;
+    animation-name: tada;
+    animation-duration: 2s
 }
 
 .btn-large {
-  margin: 10px;
+    margin: 10px;
 }
 
 .btn {
-  margin:10px;
+    margin: 10px;
 }
 
 .catlist {
-  position: relative;
-  bottom: 100px;
+    position: relative;
+    bottom: 100px;
 }
 
 #searchicon {
-  position: relative;
-  top: 80px;
+    position: relative;
+    top: 80px;
 }

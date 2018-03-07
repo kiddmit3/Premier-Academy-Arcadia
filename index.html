@@ -8,21 +8,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="./assets/styles/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./assets/styles/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#ef5350">
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" data-activates="sidebar" href="/" class="brand-logo center"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
+                <a id="logo-container" data-activates="sidebar" href="#" class="brand-logo center"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
+                	<li><a href="./">Contact Us</a></li>
                     <li style="color: black;"><i class="fas fa-phone"></i> (626) 765-3519</li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="./">Home</a></li>
                     <li><a href="./">Services</a></li>
                     <li><a href="./">Calendar</a></li>
-                    <li><a href="./">Faculty and Partners</a></li>
-                    <li><a href="./">Contact Us</a></li>
+                    <li><a href="./">Faculty</a></li>
                 </ul>
                 <ul id="sidebar" class="side-nav">
                     <li><a href="./">Home</a></li>
@@ -38,9 +38,11 @@
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container">
-                    <h1 class="header center red-text text-lighten-2" id="title">PREMIER ACADEMY</h1>
+                    <h1 class="header center red-text text-lighten-1" id="title">PREMIER ACADEMY</h1>
                     <div class="row center">
-                        <h5 class="header col s12" style="color: #E54236;">ARCADIA, CA CAMPUS
+                        <h5 class="header col s12 red-text text-lighten-2">ARCADIA, CA CAMPUS</h5>
+
+                                <button data-target="modal4" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable">REGISTER NOW</button>
                     </div>
                 </div>
             </div>
@@ -50,45 +52,52 @@
                 </video>
             </div>
         </div>
-        <div class="container">
+
+<div class="container">
             <div class="section">
                 <div class="row">
-                	<div class="col m1"></div>
-                    <div class="col s12 m5">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                            <h5 class="center">Tutoring Services</h5>
+                    <div class="col s6 m3">
+                        <div class="card hoverable mediums">
+                            <div class="center"><img class="icons" src="./assets/icons/bookmark.png"></div>
+                            <h5 class="center">Afterschool Program</h5>
                             <p class="light">
-                                We pride ourselves in ensuring your student has the absolute best services available to enhance/supplement their regular school curriculum. These classes and private tutoring sessions focus on the student’s weaknesses and makes sure they improve and support success in the regular classroom.
+                                Our afterschool program runs parallel to the school year, from the end of August through the middle of June. We provide supplementary instruction in English, Mathematics, and Chinese, as well as AP and SAT test preparation. 
                             </p>
-                            <div class="center">
-                                <button data-target="modal4" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable">NEW STUDENT SIGN UP</button>
-                            </div>
                         </div>
                     </div>
-                    <div class="col s12 m5">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <div class="col s6 m3">
+                        <div class="card hoverable mediums">
+                            <div class="center"><img class="icons" src="./assets/icons/book-1.png"></div>
+                            <h5 class="center">Tutoring</h5>
+                            <p class="light">
+                                We pride ourselves in ensuring that students have the absolute best services available to enhance and supplement their learning process. These classes and private tutoring sessions focus on the student’s weaknesses to make sure they improve as to attribute success in the regular classroom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s6 m3">
+                        <div class="card hoverable mediums">
+                            <div class="center"><img class="icons" src="./assets/icons/compass.png"></div>
                             <h5 class="center">College Counseling</h5>
-                            <p class="light">Selecting the proper college will be the most important decision your son or daughter can make. Depending on the students English level and education background there are many routes to enter various colleges in the United States. </p>
-                            <p class="light">PLW Education has over 20 years experience successfully preparing and sending students to the best universities in the United States.</p>
+                            <p class="light">Selecting the proper college will be one of the most important decisions your son or daughter will make, There are many routes to enter, and Premier Academy has over 20 years of experience successfully preparing and sending students to the best universities, so let our expertise guide you!</p>
                         </div>
                     </div>
-                    <div class="col s12 m12">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">person_add</i></h2>
+
+                    <div class="col s6 m3">
+                        <div class="card hoverable mediums">
+                            <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
                             <h5 class="center">Want to Tutor?</h5>
-                            <p class="light">Want to tutor for us? We are always looking for reputable tutors who specialize across many subject areas. We particularly look for tutors that can teach AP level courses. If interested, please contact us and we could undergo the screening process.</p>
+                            <p class="light">Want to tutor for us? Althogh we have a great selection of teachers, we are always looking to add more to the family. We look for those who specialize across many subject areas, particularly look for tutors that can teach AP level courses.</p>
                         </div>
-                    </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="container">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 center">
-                        <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <div class="col s12 m6">
+                        <div class="card hoverable">
+                        
                         <h4>Contact Us</h4>
                         <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13210.159112680672!2d-118.0285779!3d34.13253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6ce8caa39ef6958!2sPLW+Education!5e0!3m2!1sen!2sus!4v1506396413647" frameborder="0" allowFullScreen></iframe>
                         <p class="left-align light">
@@ -97,22 +106,16 @@
                             <br/>+1 626-765-3519
                             <br/>info@premierstudentservices.com
                         </p>
+                    	</div>
                     </div>
                 </div>
             </div>
         </div>
+        </div> 
         <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <i class="material-icons large">library_books</i>
-                    </div>
-                </div>
-            </div>
             <div class="parallax"><img src="./assets/img/helloquence-61189-unsplash.jpg" alt="Unsplashed background img 3"></img>
             </div>
         </div>
-    </div>
     <footer class="page-footer red">
         <div class="container">
             <div class="row">
@@ -127,7 +130,7 @@
                 Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
             </div>
         </div>
-    </footer>
+    </footer>   
     <script src="./assets/libs/fontawesome-all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./assets/libs/handlebars-v4.0.11.js"></script>
