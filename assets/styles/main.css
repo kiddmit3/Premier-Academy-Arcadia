@@ -133,6 +133,7 @@ footer.page-footer {
     position: relative;
     top: 60px;
     margin-bottom: 40px;
+    font-family: 'Patua One';
 }
 
 #myVideo {
@@ -143,11 +144,6 @@ footer.page-footer {
     height: 40vh;
     object-fit: cover;
 }
-
-.modal {
-    width: 30%;
-}
-
 
 .circle {
     border: 5px solid white;

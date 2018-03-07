@@ -8,32 +8,100 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="./assets/styles/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
-<!--     <link href="./assets/styles/animate.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Patua+One" rel="stylesheet">
+    <!--     <link href="./assets/styles/animate.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#ef5350">
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" data-activates="sidebar" href="#" class="brand-logo center"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
+                <a id="logo-container" class="brand-logo center"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                	<li><a href="./">Contact Us</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                     <li style="color: black;"><i class="fas fa-phone"></i> (626) 765-3519</li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="./">Services</a></li>
-                    <li><a href="./">Calendar</a></li>
-                    <li><a href="./">Faculty</a></li>
-                </ul>
-                <ul id="sidebar" class="side-nav">
-                    <li><a href="./">Home</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#calendar">CALENDAR</a></li>
+                    <li><a href="#faculty">FACULTY</a></li>
                 </ul>
                 <a href="/" data-activates="sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
         </nav>
     </div>
+    <ul id="sidebar" class="side-nav">
+        <li><a href="./">Home</a></li>
+    </ul>
 </head>
 
 <body>
+    <!-- Registration Modal (Formspree) -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12" action="https://formspree.io/davidlac.web@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
+                            <label for="first_name">Parent's First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
+                            <label for="last_name">Parent's Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email" type="email" class="validate" name="Email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="phone" type="tel" class="validate" name="Phone #" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="student_first_name" type="text" class="validate" name="Student's First Name">
+                            <label for="student_first_name">Student's First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="school" type="text" class="validate" name="School">
+                            <label for="school">School</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="subject" type="text" class="validate">
+                            <label for="subject">Subjects</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input id="first_name" type="text" class="validate" name="First Name">
+                            <label for="first_name">Grade</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input id="age" type="text" class="validate" name="Age">
+                            <label for="age">Age</label>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <label>Program(s) Interested in:</label>
+                        <select multiple name="Program">
+                            <option value="" disabled selected>Choose your options</option>
+                            <option value="Tutoring">Private Tutoring</option>
+                            <option value="Afterschool">Afterschool</option>
+                            <option value="Summer">Summer Program</option>
+                            <option value="SAT, ACT, PSAT, or AP">SAT/ACT/PSAT/AP Prep</option>
+                            <option value="ESL">ESL/ELD/TOEFL</option>
+                            <option value="College Planning">College Planning</option>
+                        </select>
+                        <label>Programs Interested:</label>
+                    </div>
+                    <div style="position: fixed; bottom: 10px; right:20px;"><input type="submit" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable" value="SUBMIT"></div>
+            </div>
+        </div>
+        </form>
+    </div>
     <div class="Homepage">
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
@@ -41,8 +109,7 @@
                     <h1 class="header center red-text text-lighten-1" id="title">PREMIER ACADEMY</h1>
                     <div class="row center">
                         <h5 class="header col s12 red-text text-lighten-2">ARCADIA, CA CAMPUS</h5>
-
-                                <button data-target="modal4" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable">REGISTER NOW</button>
+                        <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1 ">REGISTER NOW</button>
                     </div>
                 </div>
             </div>
@@ -52,20 +119,26 @@
                 </video>
             </div>
         </div>
-
-<div class="container">
+        <div class="container">
             <div class="section">
                 <div class="row">
-                    <div class="col s6 m3">
+                    <div class="col m6 l3">
                         <div class="card hoverable mediums">
                             <div class="center"><img class="icons" src="./assets/icons/bookmark.png"></div>
                             <h5 class="center">Afterschool Program</h5>
                             <p class="light">
-                                Our afterschool program runs parallel to the school year, from the end of August through the middle of June. We provide supplementary instruction in English, Mathematics, and Chinese, as well as AP and SAT test preparation. 
+                                Our afterschool program runs parallel to the school year, from the end of August through the middle of June. We provide supplementary instruction in English, Mathematics, and Chinese, as well as AP and SAT test preparation.
                             </p>
                         </div>
                     </div>
-                    <div class="col s6 m3">
+                    <div class="col m6 l3">
+                        <div class="card hoverable mediums">
+                            <div class="center"><img class="icons" src="./assets/icons/formula.png"></div>
+                            <h5 class="center">Summer Program</h5>
+                            <p class="light">Premier Academy is now enrolling for our summer program! Our summer adventure features morning and afternoon courses in English, math, science, writing and speech, and a field trip every Friday.</p>
+                        </div>
+                    </div>
+                    <div class="col m6 l3">
                         <div class="card hoverable mediums">
                             <div class="center"><img class="icons" src="./assets/icons/book-1.png"></div>
                             <h5 class="center">Tutoring</h5>
@@ -74,68 +147,80 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col s6 m3">
+                    <div class="col m6 l3">
                         <div class="card hoverable mediums">
                             <div class="center"><img class="icons" src="./assets/icons/compass.png"></div>
                             <h5 class="center">College Counseling</h5>
-                            <p class="light">Selecting the proper college will be one of the most important decisions your son or daughter will make, There are many routes to enter, and Premier Academy has over 20 years of experience successfully preparing and sending students to the best universities, so let our expertise guide you!</p>
+                            <p class="light">Selecting the proper college will be one of the most important decisions your son or daughter will make, There are many routes to enter, and Premier Academy has over 20 years of experience successfully preparing and sending students to the best universities.</p>
                         </div>
                     </div>
-
-                    <div class="col s6 m3">
-                        <div class="card hoverable mediums">
-                            <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
-                            <h5 class="center">Want to Tutor?</h5>
-                            <p class="light">Want to tutor for us? Althogh we have a great selection of teachers, we are always looking to add more to the family. We look for those who specialize across many subject areas, particularly look for tutors that can teach AP level courses.</p>
-                        </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="container">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 m6">
+                    <div class="col s12 m4">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image hoverable waves-effect waves-block waves-light">
+                                        <img class="activator" src="./assets/img/search.jpg">
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                                        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13210.159112680672!2d-118.0285779!3d34.13253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6ce8caa39ef6958!2sPLW+Education!5e0!3m2!1sen!2sus!4v1506396413647" frameborder="0" allowFullScreen></iframe>
+                                        <p class="left-align light">
+                                            625 S 1st Ave
+                                            <br/>Arcadia, CA 91006
+                                            <br/>+1 626-765-3519
+                                            <br/>info@premierstudentservices.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="card hoverable s12">
+                                <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
+                                <h5 class="center">Want to Tutor?</h5>
+                                <p class="light">Want to tutor for us? Although we have a great selection of teachers, we are always looking to add more to the family.
+                                    <!-- We look for those who specialize across many subject areas, particularly look for tutors that can teach AP level courses -->.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m8">
                         <div class="card hoverable">
-                        
-                        <h4>Contact Us</h4>
-                        <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13210.159112680672!2d-118.0285779!3d34.13253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6ce8caa39ef6958!2sPLW+Education!5e0!3m2!1sen!2sus!4v1506396413647" frameborder="0" allowFullScreen></iframe>
-                        <p class="left-align light">
-                            625 S 1st Ave
-                            <br/>Arcadia, CA 91006
-                            <br/>+1 626-765-3519
-                            <br/>info@premierstudentservices.com
-                        </p>
-                    	</div>
+                            <div class="card-image"><img src="./assets/img/pan-xiaozhen-272654-unsplash.jpg"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div> 
         <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="./assets/img/helloquence-61189-unsplash.jpg" alt="Unsplashed background img 3"></img>
             </div>
         </div>
-    <footer class="page-footer red">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h5 class="white-text">About Us</h5>
-                    <p class="grey-text text-lighten-4">PLW Education (PLW) is a US based company with branch offices throughout China that focuses on the successful United States placement of Greater China students entering middle school, high school and college. We have over 20 years experience and the knowledge and relationships to successfully place our students into the best possible school and living arrangements. In today’s ever changing education system, it is important to find a partner and guide who will provide you with a one stop solution posititioning your student to succeed.</p>
+        <footer class="page-footer red">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h5 class="white-text">About Us</h5>
+                        <p class="grey-text text-lighten-4">PLW Education (PLW) is a US based company with branch offices throughout China that focuses on the successful United States placement of Greater China students entering middle school, high school and college. We have over 20 years experience and the knowledge and relationships to successfully place our students into the best possible school and living arrangements. In today’s ever changing education system, it is important to find a partner and guide who will provide you with a one stop solution posititioning your student to succeed.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
             </div>
-        </div>
-    </footer>   
-    <script src="./assets/libs/fontawesome-all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./assets/libs/handlebars-v4.0.11.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+        </footer>
+        <script src="./assets/libs/fontawesome-all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="./assets/libs/handlebars-v4.0.11.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 
 </html>
