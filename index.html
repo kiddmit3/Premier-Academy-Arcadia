@@ -48,42 +48,42 @@
                 <h4 style="font-family: 'Patua One';">Premier Academy</h4></div>
             <div class="row">
                 <form class="col s12" action="https://formspree.io/davidlac.web@gmail.com" method="POST">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
-                            <label for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
-                            <label for="last_name">Last Name</label>
-                        </div>
-                        <div class="input-field col s12 m6">
-                            <input id="email" type="email" class="validate" name="Email">
-                            <label for="email">Email*</label>
-                        </div>
-                        <div class="input-field col s12 m6">
-                            <input id="phone" type="tel" class="validate" name="Phone #" required>
-                            <label for="phone">Phone Number**</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="student_first_name" type="text" class="validate" name="Student's First Name">
-                            <label for="student_first_name">Student's Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="school" type="text" class="validate" name="School">
-                            <label for="school">School</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="subject" type="text" class="validate">
-                            <label for="subject">Subjects</label>
-                        </div>
-                        <div class="input-field col s3">
-                            <input id="grade" type="text" class="validate" name="Grade">
-                            <label for="grade">Grade</label>
-                        </div>
-                        <div class="input-field col s3">
-                            <input id="age" type="text" class="validate" name="Age">
-                            <label for="age">Age</label>
-                        </div>
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email" type="email" class="validate" name="Email">
+                        <label for="email">Email*</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="phone" type="tel" class="validate" name="Phone #" required>
+                        <label for="phone">Phone Number**</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="student_first_name" type="text" class="validate" name="Student's First Name">
+                        <label for="student_first_name">Student's Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="school" type="text" class="validate" name="School">
+                        <label for="school">School</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="subject" type="text" class="validate">
+                        <label for="subject">Subjects</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="grade" type="text" class="validate" name="Grade">
+                        <label for="grade">Grade</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="age" type="text" class="validate" name="Age">
+                        <label for="age">Age</label>
+                    </div>
                     <div class="col s12">
                         <label>Program(s) Interested in:</label>
                         <select multiple name="Program">
@@ -281,7 +281,70 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container scrollspy" style="padding: 100px 0px; margin-top: 100px" id="faculty">
+            <div class="row">
+                <div class="col s4"></div>
+                <div class="col s8"></div>
+                <div class="col s8"></div>
+                <div class="col s4"></div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l4" id="En-Display">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./premierlogo.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l8" id="englishTeachers"></div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l8" id="scienceTeachers">
+                </div>
+                <div class="col s12 m6 l4" id="Sci-Display">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./premierlogo.png">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="english-template" type="text/x-handlebars-template">
+            {{#each english}}
+            <div class="col s6 m6 l3">
+                <div class="card">
+                    <div class="card-image hoverable waves-effect waves-block waves-light">
+                        <img class="activator" src="{{profile}}">
+                        <span class="card-title">{{name}}</span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+        <script id="science-template" type="text/x-handlebars-template">
+            {{#each science}}
+            <div class="col s6 m6 l3 right">
+                <div class="card">
+                    <div class="card-image hoverable waves-effect waves-block waves-light">
+                        <img class="activator" src="{{profile}}">
+                        <span class="card-title">{{name}}</span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
     </div>
     <div class="parallax-container valign-wrapper">
         <div class="parallax"><img style="width:100%;" src="./assets/img/helloquence-61189-unsplash.jpg" alt="Unsplashed background img 3"></img>
@@ -308,8 +371,9 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/libs/fontawesome-all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./assets/libs/fontawesome-all.js"></script>
+    <script src="./assets/libs/handlebars-v4.0.11.js"></script>
     <script src="./assets/libs/handlebars-v4.0.11.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
