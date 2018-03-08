@@ -6,6 +6,11 @@ Static business landing page for Premier Academy, Arcadia that utilizes web apps
 
 ## Screens
 
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/Premier-Academy-Arcadia/master/assets/img/ReadMe/Capture.PNG)
+
+
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/Premier-Academy-Arcadia/master/assets/img/ReadMe/Capture2.PNG)
+
 ## Built With
 
 * HTML
