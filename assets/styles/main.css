@@ -347,7 +347,6 @@ nav .brand-logo {
     animation-duration: 2s
 }
 
-
 #register-btn {
     animation-name: fadeIn;
     animation-duration: 3s
@@ -408,10 +407,6 @@ nav .brand-logo {
 
     .parallax-container {
         min-height: 250px;
-    }
-
-    .icons1 {
-        display: none;
     }
 
     #middleImage {
