@@ -12,13 +12,12 @@
     <!--     <link href="./assets/styles/animate.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#ef5350">
-    <div class="navbar-fixed">
+    <div class="navbar-fixed" style="font-family: 'Patua One';">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" class="brand-logo center" href="#home"><img class="logomain" alt="logo" src="./premierlogo.png"/></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li style="color: black;"><i class="fas fa-phone"></i> (626) 765-3519</li>
+                    <li><a href="#contact">📱 (626) 765-3519</li></a></li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#services">SERVICES</a></li>
@@ -30,7 +29,11 @@
         </nav>
     </div>
     <ul id="sidebar" class="side-nav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home">🏠 HOME</a></li>
+        <li><a href="#services">📚 SERVICES</a></li>
+        <li><a href="#calendar">📅 CALENDAR</a></li>
+        <li><a href="#faculty">👪 FACULTY</a></li>
+        <li><a href="#contact">📱 (626) 765-3519</li></a></li>
     </ul>
 </head>
 
@@ -38,24 +41,26 @@
     <!-- Registration Modal (Formspree) -->
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
+            <div class="row center">
+                <h4 style="font-family: 'Patua One';">Premier Academy</h4></div>
             <div class="row">
                 <form class="col s12" action="https://formspree.io/davidlac.web@gmail.com" method="POST">
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
-                            <label for="first_name">Parent's First Name</label>
+                            <label for="first_name">First Name</label>
                         </div>
                         <div class="input-field col s6">
                             <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
-                            <label for="last_name">Parent's Last Name</label>
+                            <label for="last_name">Last Name</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6">
                             <input id="email" type="email" class="validate" name="Email">
                             <label for="email">Email*</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6">
                             <input id="phone" type="tel" class="validate" name="Phone #" required>
                             <label for="phone">Phone Number**</label>
                         </div>
@@ -63,7 +68,7 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="student_first_name" type="text" class="validate" name="Student's First Name">
-                            <label for="student_first_name">Student's First Name</label>
+                            <label for="student_first_name">Student's Name</label>
                         </div>
                         <div class="input-field col s6">
                             <input id="school" type="text" class="validate" name="School">
@@ -102,8 +107,8 @@
                     </div>
                     <div>
                         *By providing your email, you will be added to our email subscription which delivers important reminders, dates, and program updates.
-                        <p>
-                            **You will also be contacted by phone to confirm your information and to schedule an appointment. </p>
+                        <br/>
+                        <br/> **You will also be contacted by phone to confirm your information and to schedule an appointment.
                     </div>
             </div>
         </div>
@@ -113,9 +118,9 @@
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container">
-                    <h1 class="header center red-text text-lighten-1" id="title">PREMIER ACADEMY</h1>
+                    <h1 class="header center red-text text-lighten-1" id="title">Premier Academy</h1>
                     <div class="row center">
-                        <h5 class="header col s12 red-text text-lighten-2">ARCADIA, CA CAMPUS</h5>
+                        <h5 class="header col s12 red-text text-lighten-2">Arcadia, CA Campus</h5>
                         <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1" id="register-btn">REGISTER NOW</button>
                     </div>
                 </div>
@@ -150,7 +155,8 @@
                             <div class="center"><img class="icons" src="./assets/icons/book-1.png"></div>
                             <h5 class="center">Tutoring</h5>
                             <p class="light">
-                                We pride ourselves in ensuring that students have the absolute best services available to enhance and supplement their learning process. These classes and private tutoring sessions focus on the student’s weaknesses to make sure they improve as to attribute success in the regular classroom.
+                                We pride ourselves in ensuring that students have the absolute best services available to enhance their learning process. This means focusing on the student’s weaknesses to ensure success in the regular classroom.
+                                <div class="center"><button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1">GO</button></div>
                             </p>
                         </div>
                     </div>
@@ -164,15 +170,16 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" style="padding-top: 100px;" class="scrollspy" id="calendar">
             <div class="section">
                 <div class="row">
-                    <div class="col s12 m4">
+                    <div class="col s12 m5">
                         <div class="row">
                             <div class="col s12">
-                                <div class="card">
+                                <div class="card scrollspy hiddenLeft" id="contact">
                                     <div class="card-image hoverable waves-effect waves-block waves-light">
                                         <img class="activator" src="./assets/img/search.jpg">
+                                        <span class="card-title">Contact Information</span>
                                     </div>
                                     <div class="card-reveal">
                                         <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
@@ -189,11 +196,15 @@
                         </div>
                         <div class="row">
                             <div class="col s12">
-                                <div class="card">
-                                        <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
-                                        <h5 class="center">Want to Tutor?</h5>
-                                        <p class="light">Although we have a great selection of teachers, we are always looking to add more to the family.</p>
-                                        <p class="center"><button class="btn waves-effect waves-light red lighten-1 activator">MORE INFO</button>
+                                <div class="card hiddenLeft">
+                                    <div class="card-image"><img src="./assets/img/sean-kong-501282-unsplash.jpg"></div>
+                                </div>
+                                <div class="card hiddenLeft">
+                                    <div class="center"><img class="icons" src="./assets/icons/notepad.png"></div>
+                                    <h5 class="center">Want to Tutor?</h5>
+                                    <p class="light">Although we have a great selection of teachers, we are always looking to add more to the family.</p>
+                                    <p class="center" />
+                                    <button class="btn waves-effect waves-light red lighten-1 activator">MORE INFO</button>
                                     <div class="card-reveal">
                                         <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
                                         <p class="left-align light">
@@ -201,32 +212,75 @@
                                         </p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m8">
-                        <div class="card">
+                    <div class="col s12 m7">
+                        <div class="card center hiddenRight">
+                            <iframe src="https://calendar.google.com/calendar/embed?src=mm8a1caj541bh54uq2pcncb2ak%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+                            <a href="https://calendar.google.com/calendar/embed?src=mm8a1caj541bh54uq2pcncb2ak%40group.calendar.google.com&ctz=America%2FLos_Angeles" target="_blank">
+                                <button class="btn waves-effect waves-light red lighten-1">Full Calendar</button>
+                            </a>
+                        </div>
+                        <div class="card hiddenRight">
                             <div class="card-image"><img src="./assets/img/dhruva-reddy-299390-unsplash.jpg"></div>
                         </div>
-                        <div class="card">
+                        <div class="card hiddenRight">
                             <div class="card-image"><img src="./assets/img/pan-xiaozhen-272654-unsplash.jpg"></div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="parallax-container valign-wrapper scrollspy" id="services">
-            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
-            </div>
-        </div>
-        <div class="parallax-container valign-wrapper scrollspy" id="calendar">
-            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
-            </div>
-        </div>
-        <div class="parallax-container valign-wrapper scrollspy" id="faculty">
-            <div class="parallax"><img style="width: 100%;" src="./assets/img/goh-rhy-yan-273919-unsplash.jpg" alt="Unsplashed background img 3"></img>
+        <div class="container scrollspy" id="services" style="padding-top: 120px; margin-bottom: 200px; font-family: 'Patua One'; font-size: .8em;">
+            <div class="row valign-wrapper" ">
+                <div class="col s12 m4">
+                    <div class="row hiddenLeft right">
+                        <img class="icons1 right" src="./assets/icons/book_2.png">
+                        <div class="col s12 right-align">
+                            <h5>Private Tutoring</h5>
+                            <p>We offer one on one as well as group sessions with our experienced tutors in a variety of subjects.</p>
+                        </div>
+                    </div>
+                    <div class="row hiddenLeft right">
+                        <img class="icons1 right" src="./assets/icons/book_1.png">
+                        <div class="col s12 right-align">
+                            <h5>SAT/PSAT/ACT</h5>
+                            <p>Get a leg up and prepare for these important tests by taking our classes or by private tutoring.</p>
+                        </div>
+                    </div>
+                    <div class="row hiddenLeft right">
+                        <img class="icons1 right" src="./assets/icons/book_3.png">
+                        <div class="col s12 right-align">
+                            <h5>College Planning</h5>
+                            <p>Start early and plan for the future with our experienced counselors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" id="middleImage"></div>
+                <div class="col s12 m4">
+                    <div class="row hiddenRight left">
+                        <img class="icons1 left" src="./assets/icons/book_4.png">
+                        <div class="col s12">
+                            <h5>Application Review</h5>
+                            <p>Get another look before you send those important university applications and get those acceptances.</p>
+                        </div>
+                    </div>
+                    <div class="row hiddenRight left">
+                        <img class="icons1 left" src="./assets/icons/book_5.png">
+                        <div class="col s12">
+                            <h5>ESL/ELD/TOEFL</h5>
+                            <p>Learning English is not easy. We have Madarian and Cantonese speaking tutors that can help you out.</p>
+                        </div>
+                    </div>
+                    <div class="row hiddenRight left">
+                        <img class="icons1 left" src="./assets/icons/book_2.png">
+                        <div class="col s12">
+                            <h5>Afterscool and Summer Programs</h5>
+                            <p>The learning process continues after school is over with us.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
@@ -237,14 +291,17 @@
             <div class="footer-copyright">
                 <div class="container">
                     <div class="right">
-                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.facebook.com/kiddmit3/" target="_blank">
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.facebook.com/pages/PLW-Education/1152778768161003?rf=1477164962582420" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.instagram.com/kiddmit3/" target="_blank">
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.instagram.com/" target="_blank">
                         <i class="fab fa-instagram"></i>
                         </a>
                         <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="mailto:davidlac.web@gmail.com" target="_blank">
                         <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class="btn-floating social-btn btn-large waves-effect waves-light grey lighten-5 hoverable" href="https://www.yelp.com/biz/plw-education-arcadia-2?osq=plw+education" target="_blank">
+                        <i class="fab fa-yelp"></i>
                         </a>
                     </div>
                     <h5 style="font-family: 'Patua One';">Premier Academy</h5>Copyright © 2018
