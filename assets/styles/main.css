@@ -243,7 +243,14 @@
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
 }
+
+
 /*End of Animation CSS*/
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
 
 .fadeRight {
     animation: fadeInRight 3s forwards;
@@ -260,16 +267,16 @@
 }
 
 .social-btn {
-    margin-left: 3px; 
+    margin-left: 3px;
     color: #F44336;
     font-size: 24px;
     line-height: 1.75;
-
 }
+
 .btn-floating.btn-large {
     width: 40px;
     height: 40px;
-  }
+}
 
 .hiddenRight {
     opacity: 0;
@@ -282,7 +289,7 @@
 
 .icons1 {
     width: 50px;
-    display:block;
+    display: block;
     margin: 0px 15px;
 }
 
@@ -297,38 +304,13 @@
     color: rgba(255, 255, 255, .9);
 }
 
-#middleImage {
-  background-image: url('../../assets/img/goh-rhy-yan-273919-unsplash1.jpg');
-  background-size: cover;
-  min-height: 750px;
-  background-position: center; 
 
-}
 
 .parallax-container .section {
     width: 100%;
 }
 
-nav ul a,
-nav .brand-logo {
-    color: #444;
-}
 
-#title {
-    position: relative;
-    top: 60px;
-    margin-bottom: 40px;
-    font-family: 'Patua One';
-}
-
-#myVideo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 40vh;
-    object-fit: cover;
-}
 
 .sidepic {
     width: 100%;
@@ -347,14 +329,44 @@ nav .brand-logo {
     animation-duration: 2s
 }
 
+
+.btn {
+    margin: 10px;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+
+#middleImage {
+    background-image: url('../../assets/img/goh-rhy-yan-273919-unsplash1.jpg');
+    background-size: cover;
+    min-height: 750px;
+    background-position: center;
+}
+
 #register-btn {
     animation-name: fadeIn;
     animation-duration: 3s
 }
 
-.btn {
-    margin: 10px;
+#title {
+    position: relative;
+    top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Patua One';
 }
+
+#myVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
 
 /*Responsiveness*/
 
@@ -362,7 +374,6 @@ nav .brand-logo {
     .mediums {
         height: 600px;
     }
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -376,7 +387,6 @@ nav .brand-logo {
     .mediums {
         height: 440px;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -391,8 +401,8 @@ nav .brand-logo {
     }
     .header {
         font-size: 20px;
-            top: -40px;
-    position: relative;
+        top: -40px;
+        position: relative;
     }
 
     #title {
@@ -400,9 +410,8 @@ nav .brand-logo {
         top: 10px;
     }
     #register-btn {
-                  top: -40px;
-    position: relative;
-
+        top: -40px;
+        position: relative;
     }
 
     .parallax-container {
@@ -410,6 +419,6 @@ nav .brand-logo {
     }
 
     #middleImage {
-      background-position: 57% 50%; 
+        background-position: 57% 50%;
     }
 }
