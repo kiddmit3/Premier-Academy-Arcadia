@@ -255,42 +255,26 @@
 
 .mediums {
     opacity: 0;
-    height: 600px;
+    height: 500px;
     animation: fadeInUp 2s forwards;
 }
 
 .social-btn {
-    padding: 1px;
+    margin-left: 3px; 
     color: #F44336;
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1.75;
+
 }
+.btn-floating.btn-large {
+    width: 40px;
+    height: 40px;
+  }
 
 .hiddenRight {
     opacity: 0;
 }
 
-html,
-body {
-    height: 100vh;
-}
-
-nav ul a,
-nav .brand-logo {
-    color: #444;
-}
-
-iframe {
-    border: 0px;
-    border-color: white;
-}
-
-p {
-    line-height: 2rem;
-}
-
-.button-collapse {
-    color: #26a69a;
-}
 
 .icons {
     width: 100px;
@@ -316,7 +300,7 @@ p {
 #middleImage {
   background-image: url('../../assets/img/goh-rhy-yan-273919-unsplash1.jpg');
   background-size: cover;
-  min-height: 700px;
+  min-height: 750px;
   background-position: center; 
 
 }
@@ -325,9 +309,9 @@ p {
     width: 100%;
 }
 
-
-footer.page-footer {
-    margin: 0;
+nav ul a,
+nav .brand-logo {
+    color: #444;
 }
 
 #title {
@@ -344,10 +328,6 @@ footer.page-footer {
     width: 100vw;
     height: 40vh;
     object-fit: cover;
-}
-
-.circle {
-    border: 5px solid white;
 }
 
 .sidepic {
@@ -381,7 +361,7 @@ footer.page-footer {
 
 @media only screen and (max-width: 1200px) {
     .mediums {
-        height: 750px;
+        height: 600px;
     }
 
 }
@@ -395,7 +375,7 @@ footer.page-footer {
         top: 10%;
     }
     .mediums {
-        height: 500px;
+        height: 440px;
     }
 
 }
