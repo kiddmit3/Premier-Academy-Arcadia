@@ -4,7 +4,7 @@
              university: "Indiana University",
              degree: "Bachelor's of Arts, Management Information Systems & Psychology",
              subjects: "College Counseling",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -12,16 +12,20 @@
              university: "UC San Diego",
              degree: "Bachelor's of Science, Management Science",
              subjects: "College Counseling",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          }
      ],
      english: [{
+             profile: "./english.png",
+             subjects: "All levels of English including ESL, AP, and college."
+         },
+         {
              name: "Wong",
              university: "Tunghai University",
              degree: "Bachelor's of Art",
              subjects: "Chinese, English, Language, Literature, College Essays",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -29,7 +33,7 @@
              university: "Occidental College, Philosophy",
              degree: "Bachelor's of Art",
              subjects: "ESL, SAT, TOFEL, IELTS, History",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -37,7 +41,7 @@
              university: "Cal State University, Northridge",
              degree: "Bachelor's of Art",
              subjects: "ISEE, SSAT, English, History, SAT",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -45,7 +49,7 @@
              university: "Michigan State University",
              degree: "Bachelor's of Art",
              subjects: "English, Language, Literature",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -53,7 +57,7 @@
              university: "UC Berkeley",
              degree: "Bachelor's of Science",
              subjects: "ISEE, SSAT, English, History, SAT",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -61,7 +65,7 @@
              university: "University of Massachusetts",
              degree: "Bachelor's of Art",
              subjects: "English, Writing, Reading, College Essays",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -69,11 +73,15 @@
              university: "Fuller Semiary",
              degree: "Master's of Art",
              subjects: "English, College Essays",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          }
      ],
      science: [{
+             profile: "./mathsci.png",
+             subjects: "Our math and science tutors are skilled in a variety of subjects including Algebra, Geometry, Calculus, Statistics, Biology,"
+         }, 
+         {
              name: "David Lac",
              university: "UC Davis",
              degree: "Bachelor's of Science, Biology",
@@ -86,7 +94,7 @@
              university: "Harvard University",
              degree: "Master's of Art",
              subjects: "Math, Physics, Chemistry",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -94,7 +102,7 @@
              university: "Western University",
              degree: "Master's of Science",
              subjects: "Math, Biology, Chemistry, Environmental Science, SAT",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -102,7 +110,7 @@
              university: "UC Santa Barbra",
              degree: "Bachelor's of Science",
              subjects: "Math, Biology, Chemistry",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -110,7 +118,7 @@
              university: "UC Riverside",
              degree: "Doctor of Philosophy, Physics",
              subjects: "Physics",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -118,7 +126,7 @@
              university: "Oxford University",
              degree: "Master's of Science, Mathematics",
              subjects: "Math, Statistics",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
@@ -126,7 +134,7 @@
              university: "UC Santa Barbra",
              degree: "Bachelor's of Science",
              subjects: "Math, English",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             profile: "./assets/default.png",
              bio: ""
          }
      ]
