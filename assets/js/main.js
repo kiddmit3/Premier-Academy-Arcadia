@@ -79,14 +79,14 @@
      ],
      science: [{
              profile: "./mathsci.png",
-             subjects: "Our math and science tutors are skilled in a variety of subjects including Algebra, Geometry, Calculus, Statistics, Biology,"
+             subjects: "Our math and science tutors are skilled in a variety of subjects including Algebra, Geometry, Calculus, Statistics, Biology, Chemistry, & Physics"
          }, 
          {
              name: "David Lac",
              university: "UC Davis",
              degree: "Bachelor's of Science, Biology",
-             subjects: "Math, Biology, Chemistry, Web Development",
-             profile: "./assets/img/profiles/david-lac.jpg",
+             subjects: "Math, Biology, Chemistry",
+             profile: "./assets/default.png",
              bio: ""
          },
          {
