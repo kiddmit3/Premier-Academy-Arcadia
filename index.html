@@ -41,74 +41,7 @@
 </head>
 
 <body>
-    <!-- Registration Modal (Formspree) -->
-    <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <div class="row center">
-                <h4 style="font-family: 'Patua One';">Premier Academy</h4></div>
-            <div class="row">
-                <form class="col s12" action="https://formspree.io/davidlac.web@gmail.com" method="POST">
-                    <div class="input-field col s6">
-                        <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
-                        <label for="last_name">Last Name</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="email" type="email" class="validate" name="Email">
-                        <label for="email">Email*</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="phone" type="tel" class="validate" name="Phone #" required>
-                        <label for="phone">Phone Number**</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="student_first_name" type="text" class="validate" name="Student's First Name">
-                        <label for="student_first_name">Student's Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="school" type="text" class="validate" name="School">
-                        <label for="school">School</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="subject" type="text" class="validate">
-                        <label for="subject">Subjects</label>
-                    </div>
-                    <div class="input-field col s3">
-                        <input id="grade" type="text" class="validate" name="Grade">
-                        <label for="grade">Grade</label>
-                    </div>
-                    <div class="input-field col s3">
-                        <input id="age" type="text" class="validate" name="Age">
-                        <label for="age">Age</label>
-                    </div>
-                    <div class="col s12">
-                        <label>Program(s) Interested in:</label>
-                        <select multiple name="Program">
-                            <option value="" disabled selected>Choose your options</option>
-                            <option value="Tutoring">Private Tutoring</option>
-                            <option value="Afterschool">Afterschool</option>
-                            <option value="Summer">Summer Program</option>
-                            <option value="SAT, ACT, PSAT, or AP">SAT/ACT/PSAT/AP Prep</option>
-                            <option value="ESL">ESL/ELD/TOEFL</option>
-                            <option value="College Planning">College Planning</option>
-                        </select>
-                        <label>Programs Interested:</label>
-                    </div>
-                    <div style="position: fixed; bottom: 10px; right:20px;">
-                        <input type="submit" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable" value="ACCEPT & SUBMIT">
-                    </div>
-                    <div>
-                        *By providing your email, you will be added to our email subscription which delivers important reminders, dates, and program updates.
-                        <br/>
-                        <br/> **You will also be contacted by phone to confirm your information and to schedule an appointment.
-                    </div>
-            </div>
-        </div>
-        </form>
-    </div>
+    
     <!-- Landing Video Container -->
     <div class="scrollspy" id="home">
         <div id="index-banner" class="parallax-container">
@@ -117,8 +50,8 @@
                     <h1 class="header center red-text text-lighten-1" id="title">Premier Academy</h1>
                     <div class="row center">
                         <h5 class="header col s12 red-text text-lighten-2">Arcadia, CA Campus</h5>
-                        <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1" id="register-btn">REGISTER NOW</button>
-                        <a href="https://plw-tutor-service.herokuapp.com/" target="#"><button class="modal-trigger btn waves-effect waves-light red lighten-1">ACCOUNTS</button></a>
+                        <button data-target="modal1" class="modal-trigger btn waves-effect waves-light red lighten-1" id="register-btn center">REGISTER NOW</button>
+                        <a href="https://plw-tutor-service.herokuapp.com/" target="#"><button class="modal-trigger btn waves-effect waves-light red lighten-1 center">ACCOUNTS</button></a>
                     </div>
                 </div>
             </div>
@@ -399,6 +332,75 @@
             </div>
         </div>
     </footer>
+
+<!-- Registration Modal (Formspree) -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="row center">
+                <h4 style="font-family: 'Patua One';">Premier Academy</h4></div>
+            <div class="row">
+                <form class="col s12" action="https://formspree.io/davidlac.web@gmail.com" method="POST">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate" name="Parent's First Name" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" name="Parent's Last Name" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email" type="email" class="validate" name="Email">
+                        <label for="email">Email*</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="phone" type="tel" class="validate" name="Phone #" required>
+                        <label for="phone">Phone Number**</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="student_first_name" type="text" class="validate" name="Student's First Name">
+                        <label for="student_first_name">Student's Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="school" type="text" class="validate" name="School">
+                        <label for="school">School</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="subject" type="text" class="validate">
+                        <label for="subject">Subjects</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="grade" type="text" class="validate" name="Grade">
+                        <label for="grade">Grade</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="age" type="text" class="validate" name="Age">
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="col s12">
+                        <label>Program(s) Interested in:</label>
+                        <select multiple name="Program">
+                            <option value="" disabled selected>Choose your options</option>
+                            <option value="Tutoring">Private Tutoring</option>
+                            <option value="Afterschool">Afterschool</option>
+                            <option value="Summer">Summer Program</option>
+                            <option value="SAT, ACT, PSAT, or AP">SAT/ACT/PSAT/AP Prep</option>
+                            <option value="ESL">ESL/ELD/TOEFL</option>
+                            <option value="College Planning">College Planning</option>
+                        </select>
+                        <label>Programs Interested:</label>
+                    </div>
+                    <div style="position: fixed; bottom: 10px; right:20px;">
+                        <input type="submit" class="btn waves-effect waves-light red lighten-1 modal-trigger hoverable" value="ACCEPT & SUBMIT">
+                    </div>
+                    <div>
+                        *By providing your email, you will be added to our email subscription which delivers important reminders, dates, and program updates.
+                        <br/>
+                        <br/> **You will also be contacted by phone to confirm your information and to schedule an appointment.
+                    </div>
+            </div>
+        </div>
+        </form>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./assets/libs/fontawesome-all.js"></script>
     <script src="./assets/libs/handlebars-v4.0.11.js"></script>
