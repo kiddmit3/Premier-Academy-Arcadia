@@ -4,7 +4,7 @@
              university: "Indiana University",
              degree: "Bachelor's of Arts, Management Information Systems & Psychology",
              subjects: "College Counseling",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/wuu.jpg",
              bio: ""
          },
          {
@@ -12,7 +12,7 @@
              university: "UC San Diego",
              degree: "Bachelor's of Science, Management Science",
              subjects: "College Counseling",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/clee.jpg",
              bio: ""
          }
      ],
@@ -25,7 +25,7 @@
              university: "Tunghai University",
              degree: "Bachelor's of Art",
              subjects: "Chinese, English, Language, Literature, College Essays",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/wong.png",
              bio: ""
          },
          {
@@ -33,7 +33,7 @@
              university: "Occidental College, Philosophy",
              degree: "Bachelor's of Art",
              subjects: "ESL, SAT, TOFEL, IELTS, History",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/kuykendall.png",
              bio: ""
          },
          {
@@ -41,7 +41,7 @@
              university: "Cal State University, Northridge",
              degree: "Bachelor's of Art",
              subjects: "ISEE, SSAT, English, History, SAT",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/jones.png",
              bio: ""
          },
          {
@@ -49,7 +49,7 @@
              university: "Michigan State University",
              degree: "Bachelor's of Art",
              subjects: "English, Language, Literature",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/mcgee.png",
              bio: ""
          },
          {
@@ -57,7 +57,7 @@
              university: "UC Berkeley",
              degree: "Bachelor's of Science",
              subjects: "ISEE, SSAT, English, History, SAT",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/lam.png",
              bio: ""
          },
          {
@@ -65,7 +65,7 @@
              university: "University of Massachusetts",
              degree: "Bachelor's of Art",
              subjects: "English, Writing, Reading, College Essays",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/borzoni.png",
              bio: ""
          },
          {
@@ -73,20 +73,20 @@
              university: "Fuller Semiary",
              degree: "Master's of Art",
              subjects: "English, College Essays",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/evans.png",
              bio: ""
          }
      ],
      science: [{
              profile: "./mathsci.png",
              subjects: "Our math and science tutors are skilled in a variety of subjects including Algebra, Geometry, Calculus, Statistics, Biology, Chemistry, & Physics"
-         }, 
+         },
          {
              name: "David Lac",
              university: "UC Davis",
              degree: "Bachelor's of Science, Biology",
              subjects: "Math, Biology, Chemistry",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/lac.jpg",
              bio: ""
          },
          {
@@ -94,7 +94,7 @@
              university: "Harvard University",
              degree: "Master's of Art",
              subjects: "Math, Physics, Chemistry",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/wang2.png",
              bio: ""
          },
          {
@@ -102,7 +102,7 @@
              university: "Western University",
              degree: "Master's of Science",
              subjects: "Math, Biology, Chemistry, Environmental Science, SAT",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/takano.png",
              bio: ""
          },
          {
@@ -110,7 +110,7 @@
              university: "UC Santa Barbra",
              degree: "Bachelor's of Science",
              subjects: "Math, Biology, Chemistry",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/wang.png",
              bio: ""
          },
          {
@@ -118,7 +118,7 @@
              university: "UC Riverside",
              degree: "Doctor of Philosophy, Physics",
              subjects: "Physics",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/moussawi.png",
              bio: ""
          },
          {
@@ -126,7 +126,7 @@
              university: "Oxford University",
              degree: "Master's of Science, Mathematics",
              subjects: "Math, Statistics",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/yang.png",
              bio: ""
          },
          {
@@ -134,7 +134,7 @@
              university: "UC Santa Barbra",
              degree: "Bachelor's of Science",
              subjects: "Math, English",
-             profile: "./assets/default.png",
+             profile: "./assets/img/profiles/chang.png",
              bio: ""
          }
      ]
