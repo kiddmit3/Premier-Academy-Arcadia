@@ -105,7 +105,7 @@ nav ul a,
 nav .brand-logo{color:#444;}
 .fadeRight{animation:fadeInRight 3s forwards;}
 .fadeLeft{animation:fadeInLeft 3s forwards;}
-.mediums{opacity:0;height:500px;animation:fadeInUp 2s forwards;}
+.mediums{opacity:0;height:550px;animation:fadeInUp 2s forwards;}
 .social-btn{margin-left:3px;color:#F44336;font-size:24px;line-height:1.75;}
 .btn-floating.btn-large{width:40px;height:40px;}
 .hiddenRight{opacity:0;}
@@ -123,7 +123,7 @@ nav .brand-logo{color:#444;}
 #register-btn{animation-name:fadeIn;animation-duration:3s}
 #title{position:relative;top:60px;margin-bottom:40px;font-family:'Patua One';}
 #myVideo{position:absolute;left:0;top:0;width:100vw;height:40vh;object-fit:cover;}
-@media only screen and (max-width:1200px){.mediums{height:600px;}
+@media only screen and (max-width:1200px){.card{padding:10px;}.mediums{height:540px;}
 }
 @media only screen and (max-width:992px){.parallax-container .section{position:absolute;top:40%;}
 #index-banner .section{top:10%;}
